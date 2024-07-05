@@ -1,0 +1,49 @@
+.textdiv{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    padding-left: 50%;
+
+}
+#body{
+    background-color: bisque;
+    width: 50%;
+    margin-left: 20%;
+}
+.main{
+    border:solid;
+   border-radius: 20px;
+    border-color: rgb(33, 118, 118);
+    border-width: 20px;
+   padding: 20px;
+   background-color: aliceblue;
+   
+}
+.links{
+    width: 50%;
+}
+.dot{
+    list-style-type: none;
+}
+@media all and(width:1001px){
+    .main ul li a:after{
+        content:"(" attr(data-email) ")";
+        font-size: medium;
+        font-style: italic;
+        color: blueviolet;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+    .main ul li a:before {
+      content: "Email: ";
+      font-style: italic;
+      color: #666;
+    }
+  }
+  @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+    .main ul li a {
+      padding-left: 21px;
+      background: url(email.png) left center no-repeat;
+    }
+  }
+  
